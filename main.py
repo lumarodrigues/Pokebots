@@ -19,9 +19,12 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 interval = 60 * 60 * (1/2)  # tweet every 1/2 hour
 
 while True:
-    poke_number = random.randint(1, 809)
-    r = requests.get(f'https://pokeapi.co/api/v2/pokemon/{poke_number}/')
-    poke_name = r.json()['forms'][0]['name']
+    poke_name = ''
+
+    if '-' not in poke_name:
+        poke_number = random.randint(1, 809)
+        r = requests.get(f'https://pokeapi.co/api/v2/pokemon/{poke_number}/')
+        poke_name = r.json()['forms'][0]['name']
 
     words = []
 
@@ -32,6 +35,9 @@ while True:
 
     i = random.randint(0, len(words))
     j = random.randint(0, len(words))
-    api.update_status('Geralmente ' + poke_name.capitalize() + ' é ' + words[i] + '.' + ' Mas hoje está ' + words[j] + '.')
+
+    api.update_status('Hoje está um dia ' + words[i] + ' para capturar ' + poke_name.capitalize() + '!')
+
+    #  api.update_status('Geralmente ' + poke_name.capitalize() + ' é ' + words[i] + '.' + ' Mas hoje está ' + words[j] + '.')
     print("Tweetou com sucesso!")
     time.sleep(interval)
