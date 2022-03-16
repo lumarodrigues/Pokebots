@@ -8,7 +8,7 @@ flake8 = "*"
 pytest = "*"
 
 [packages]
-requests = "==2.21.0"
+requests = "==2.27.1"
 tweepy = "*"
 
 [requires]
