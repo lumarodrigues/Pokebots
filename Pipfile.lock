@@ -76,11 +76,10 @@
         },
         "tweepy": {
             "hashes": [
-                "sha256:8abd828ba51a85a2b5bb7373715d6d3bb32d18ac624e3a4db02e4ef8ab48316b",
-                "sha256:ecc7f200c86127903017e48824efd008734814e95f3e8e9b45ce0f4120dd08db"
+                "sha256:7f92574920c2f233663fff154745fc2bb0d10aedc23617379a912d8e4fefa399",
+                "sha256:f0abbd234a588e572f880f99a094ac321217ff3eade6c0eca118ed6db8e2cf0a"
             ],
-            "index": "pypi",
-            "version": "==3.8.0"
+            "version": "==4.10.0"
         },
         "urllib3": {
             "hashes": [
