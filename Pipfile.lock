@@ -75,12 +75,8 @@
             "version": "==1.15.0"
         },
         "tweepy": {
-            "hashes": [
-                "sha256:8abd828ba51a85a2b5bb7373715d6d3bb32d18ac624e3a4db02e4ef8ab48316b",
-                "sha256:ecc7f200c86127903017e48824efd008734814e95f3e8e9b45ce0f4120dd08db"
-            ],
-            "index": "pypi",
-            "version": "==3.8.0"
+            "hashes": [],
+            "version": "==4.14.0"
         },
         "urllib3": {
             "hashes": [
